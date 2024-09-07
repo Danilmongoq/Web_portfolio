@@ -23,8 +23,6 @@ def write_to_csv(data):
         writer.writeheader()
         writer.writerow({'Name': name, 'E-mail': email, 'Message': message})
 
-        # csv_writer = csv.writer(contact_database, delimiter=',', quotechar='"')
-        # csv_writer.writerow([email, name, message])
 
 @app.route("/submit_form", methods = ['POST', 'GET'])
 def submit_form():
